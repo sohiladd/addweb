@@ -51,4 +51,15 @@ Make whole dynamic form. Dynamic form means do not write anything in body sectio
 
 24-09-2021 Perform practicals on all topics from functional programmers
 
+
+25-09-2021 create a practical of functional programmers
+
+28-09-2021 create some practicals of ts Narrowing ,More on functions Object types , Type manipulation
+
+30-09-2021 read some theory about Creating types from types, Generics , ,KeyOf type operator , TypeOf type operator , Indexed access types
+Conditional types
+
+
+04-10-2021 install php in docker and create a simple form and some basic php practicals
+
 Tasks

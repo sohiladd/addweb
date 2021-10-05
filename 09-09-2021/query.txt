@@ -1,0 +1,2 @@
+how to call three class second parameter
+how to pass infinit parameter in php

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body onload="formload()"  style="text-align: center;">
+
+
+
+
+</body>
+</html>
+
+<script>
+	
+function formload(){
+
+	 var form = document.createElement("form");
+	 form.setAttribute("method", "post");
+     form.setAttribute("action", "submit.php");
+     form.setAttribute("name","myform");
+     form.setAttribute("id","myform");
+
+		var br = document.createElement("br");
+		var name = document.createElement("input");   
+		name.setAttribute('type','text');
+		name.setAttribute('name','name');
+		name.setAttribute('id','name');
+		name.setAttribute('placeholder','enter Username');                   // Insert text
+        document.body.appendChild(name);
+        document.body.appendChild(br);
+
+
+
+
+		var email = document.createElement("input");   
+		email.setAttribute('type','email');
+		email.setAttribute('name','email');
+		email.setAttribute('id','email');
+		email.setAttribute('placeholder','enter email');                   // Insert text
+        document.body.appendChild(email);
+        document.body.appendChild(br);
+
+
+
+		var pass = document.createElement("input");   
+		pass.setAttribute('type','password');
+		pass.setAttribute('name','pass');
+		pass.setAttribute('id','pass');
+		pass.setAttribute('placeholder','enter password');                   // Insert text
+        document.body.appendChild(pass);
+        document.body.appendChild(br);
+        
+
+
+
+
+		var number = document.createElement("input");   
+		number.setAttribute('type','text');
+		number.setAttribute('name','number');
+		number.setAttribute('id','number');
+		number.setAttribute('placeholder','enter number');                   // Insert text
+        document.body.appendChild(number);
+        document.body.appendChild(br);
+
+		
+
+
+		var submit = document.createElement("input");   
+		submit.setAttribute('type','submit');
+		submit.setAttribute('name','submit');
+		submit.setAttribute('id','submit');
+		submit.setAttribute('value','submit');                   // Insert text
+        document.body.appendChild(submit);
+
+
+document.getElementById("submit").addEventListener("click", function() {
+var nameval=document.getElementById('pname').innerHTML=name.value;
+
+
+    if(nameval.length >= 3 && nameval.length <=10){
+        return true;
+    }else
+    {
+    	alert("nme must be 3 to 10 digit");
+    	return false;
+    }
+
+
+
+document.getElementById('pemail').innerHTML=email.value;
+document.getElementById('ppassword').innerHTML=pass.value;
+document.getElementById('pnumber').innerHTML=number.value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});}
+</script>
+
+<table>
+	
+	<tr>	<th colspan="2">User Information</th>	</tr>
+	<tr>	<th>User Name :-</th><td><span id="pname"></span></td>	</tr>
+	<tr>	<th>User Email :-</th><td><span id="pemail"></span> </td> </tr>
+	<tr>	<th>User password :-</th><td><span id="ppassword"></span> </td>	</tr>
+	<tr>	<th>User Contact No :-</th><td><span id="pnumber"></span> </td>	</tr>
+
+
+</table>
+
+
+
+
+
+
+

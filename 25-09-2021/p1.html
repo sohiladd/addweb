@@ -1,0 +1,41 @@
+<script>
+
+	function fun()
+	{
+
+		document.getElementById("img").src="http://127.0.0.1/js/on.gif";
+	}
+
+	function funoff()
+	{
+
+		document.getElementById("img").src="http://127.0.0.1/js/off.gif";
+	}
+
+function font()
+{
+	document.getElementById('per').style.fontSize="20+";
+
+}
+</script>
+
+
+
+<img src="http://127.0.0.1/js/off.gif" id="img">
+
+
+<button onclick="fun();">on
+	
+</button>
+
+
+
+<button onclick="funoff();">off
+</button>
+
+<br><br><br>
+<p id="per">this is change</p>
+
+
+
+<button onclick="font();">font </button>

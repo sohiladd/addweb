@@ -1,0 +1,20 @@
+
+<p id="calender"></p>
+
+<script>
+let content=getdatebetween("1997/11/10","2021/09/21");
+document.getElementById('calender').innerHTML=content;
+
+
+function getdatebetween(birth,today)
+{
+    let date1=new Date(birth);
+    let date2=new Date(today);
+    
+
+    console.log(date1);
+}
+
+
+
+</script>

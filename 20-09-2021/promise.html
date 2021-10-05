@@ -1,0 +1,16 @@
+<script>
+	
+	var mypromise=new Promise((resolve, reject)=> { 
+ 	let x=10;
+ 	if (x<=5)
+ 	 {
+ 		resolve("this is a max");
+ 	}else
+ 	{
+ 		reject("this is not max");
+ 	}
+ });
+	
+	mypromise.then((message)=>{
+		console.log(message);}).catch((message)=>{ console.log(message)});
+</script>

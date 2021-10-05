@@ -1,0 +1,70 @@
+<style>
+  
+  .main-div{
+    width: 500px;
+    height: 300px;
+    background: red;
+    border: dotted;
+
+  }
+
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  
+}
+.anm{
+  position: relative;
+  animation-name: example;
+  animation-duration: 30s;
+}
+
+@keyframes example {
+  0%   {background-color:green; left:0px; top:0px;}
+  25%  {background-color:green; left:200px; top:0px;}
+  
+</style>
+
+
+
+<div></div>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>div example</title>
+</head>
+<body>
+<div class="main-div">
+  <div class="div" id="div"  onclick="fun()">
+    
+
+  </div>
+  <script>
+    function fun() {
+      
+ var element = document.getElementById("div");
+   element.classList.toggle("anm");
+
+
+const btn=document.querySelector('.div');
+
+
+
+btn.onclick = (function outer() {
+    let counter = 0;
+    return function inner() {
+        counter++;
+        
+ setTimeout(function(){ alert(counter); }, 3000);
+      
+    };
+
+})();
+   }
+  </script>
+</div>
+</body>
+</html>

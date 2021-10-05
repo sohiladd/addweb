@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<fieldset>
+<legend>&nbsp;&nbsp;<h1>Form</h1>&nbsp;&nbsp;</legend>
+<form action="x2.html" enctype="multipart/form-data">
+  <label for="fname">First name:</label>
+  <input type="input" id="name" name="fname"><br><br>
+  <input type="submit" value="Submit" id="details" click="passvalue();">
+</form>
+</fieldset>
+</body>
+</html>
+
+
+<script type="text/javascript">
+function passvalue()
+ {
+   var x=document.getElementById('name').value;  
+  localStorage.setItem("textvalue",x);
+  return false;
+}
+</script>

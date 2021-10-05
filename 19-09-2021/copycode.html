@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			</head>
+	<body  onload ="GFG_Fun()">
+		
+<script>
+
+
+			
+	// Create a break line element
+	var br = document.createElement("br");
+	function GFG_Fun() {
+				
+	// Create a form synamically
+	var form = document.createElement("form");
+	form.setAttribute("method", "post");
+	form.setAttribute("action", "master2_1.html");
+
+
+		var email = document.createElement("input");   
+		email.setAttribute('type','email');
+		email.setAttribute('name','email');
+		email.setAttribute('id','email');
+		email.setAttribute('placeholder','enter email');                   
+      
+	
+
+		var pass = document.createElement("input");   
+		pass.setAttribute('type','password');
+		pass.setAttribute('name','pass');
+		pass.setAttribute('id','pass');
+		pass.setAttribute('placeholder','enter password');                 
+      
+
+
+		var number = document.createElement("input");   
+		number.setAttribute('type','text');
+		number.setAttribute('name','number');
+		number.setAttribute('id','number');
+		number.setAttribute('placeholder','enter number');                   
+       				// create a submit button form mate
+				var s = document.createElement("input");
+				s.setAttribute("type", "submit");
+				s.setAttribute("value", "Submit");
+				s.setAttribute("name","submit")
+
+
+				  form.appendChild(email);
+				form.appendChild(br.cloneNode());
+
+
+				  form.appendChild(pass);
+				form.appendChild(br.cloneNode());		
+				
+				  form.appendChild(number);
+
+				form.appendChild(br.cloneNode());		
+				
+				form.appendChild(s);
+
+				document.getElementsByTagName("body")[0]
+			.appendChild(form);
+
+				funct();
+				function funct()
+				{
+ 					var x=document.getElementById('email').value;  
+ 					 localStorage.setItem("textvalue",x);
+var v="sohil";
+    localStorage.setItem("textvalue",v);
+ 					 console.log(x);
+
+
+}
+}
+
+
+		</script>
+	</body>
+</html>

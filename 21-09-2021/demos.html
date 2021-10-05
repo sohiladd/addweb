@@ -1,0 +1,41 @@
+<html>     
+<head>   
+    <script type="text/javascript">   
+        function mouseOver() {   
+            document.getElementById("div1").style.color   
+                            = "blue";   
+  
+            document.getElementById("div2").innerHTML   
+                            = "mouseOver triggered";   
+              
+            document.getElementById("div2").style.color   
+                            = "green";   
+        }   
+        function mouseOut() {   
+            document.getElementById("div1").style.color   
+                            = "magenta";   
+     
+            document.getElementById("div2").innerHTML   
+                            = "mouseOut triggered";   
+              
+            document.getElementById("div2").style.color   
+                            = "red";   
+                        }   
+    </script>   
+</head>   
+  
+<body style="text-align:center;">   
+        
+    <h1 id="div1" onmouseover="mouseOver()"  
+                onmouseout="mouseOut()">   
+        Bring your mouse inside it.   
+    </h1>   
+            
+    <h3>   
+        Move your cursor on the above heading to see the result.  
+    </h3>   
+            
+    <h2><p id="div2"></p></h2>   
+</body>   
+    
+</html>  

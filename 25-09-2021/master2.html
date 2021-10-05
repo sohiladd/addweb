@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			</head>
+	<body  onload ="GFG_Fun()" style="text-align: center;">
+		
+<script>
+	var down = document.getElementById("GFG_DOWN");
+			
+	// Create a break line element
+	var br = document.createElement("br");
+	function GFG_Fun() {
+				
+	// Create a form synamically
+	var form = document.createElement("form");
+	form.setAttribute("method", "post");
+	form.setAttribute("action", "master2_1.html");
+
+	// Create an input element for Full Name
+	
+
+		var email = document.createElement("input");   
+		email.setAttribute('type','email');
+		email.setAttribute('name','email');
+		email.setAttribute('id','email');
+		email.setAttribute('placeholder','enter email');                   // Insert text
+      
+	
+
+		var pass = document.createElement("input");   
+		pass.setAttribute('type','password');
+		pass.setAttribute('name','pass');
+		pass.setAttribute('id','pass');
+		pass.setAttribute('placeholder','enter password');                   // Insert text
+      
+
+
+		var number = document.createElement("input");   
+		number.setAttribute('type','text');
+		number.setAttribute('name','number');
+		number.setAttribute('id','number');
+		number.setAttribute('placeholder','enter number');                   // Insert text
+       				// create a submit button
+				var s = document.createElement("input");
+				s.setAttribute("type", "submit");
+				s.setAttribute("value", "Submit");
+				s.setAttribute('onclick', passvalue());
+
+				
+
+				  form.appendChild(email);
+				// Inserting a line break
+				form.appendChild(br.cloneNode());
+
+				  form.appendChild(pass);
+				// Inserting a line break
+				form.appendChild(br.cloneNode());		
+				
+				  form.appendChild(number);
+				// Inserting a line break
+				form.appendChild(br.cloneNode());		
+				
+				form.appendChild(s);
+
+				document.getElementsByTagName("body")[0]
+			.appendChild(form);
+
+
+document.getElementById("submit").addEventListener("click", function() {
+var nameval=document.getElementById('pname').innerHTML=name.value;
+var emailval= document.getElementById('pemail').innerHTML=email.value;
+var passval=document.getElementById('ppassword').innerHTML=pass.value;
+var numberval=document.getElementById('pnumber').innerHTML=number.value;
+
+localStorage.setItem("txtname",nameval);
+localStorage.setItem("txtemail",emailval);
+localStorage.setItem("txtpass",passval);
+localStorage.setItem("txtphone",numberval);
+
+}
+			}
+		</script>
+	</body>
+</html>

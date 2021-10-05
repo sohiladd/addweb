@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>state city country</title>
+</head>
+<body>
+	<script>
+		function fun() {
+			var x=document.getElementById('country').value;
+			if (x==="india") {
+				var array=['gujarat','maharastra','haryana','panjab'];
+			}else if(x==="usa")
+			{
+				var array=['New York','California','Texas','Illinois'];
+
+			}else{
+			var array=[''];
+
+			}
+			 var string="";
+			for (var i =0; i<array.length ;i++)
+			 {
+				
+			 	 string=string+"<option value='array[i]'>"+array[i]+"</option>";
+
+			}
+			document.getElementById('div').innerHTML=string;
+
+		}
+
+	</script>
+
+<select name="country" id="country" onchange="fun();">
+	<option>india</option>
+	<option>usa</option>
+</select>
+
+<div>
+	<select id="div">
+		
+		<option>select item</option>
+		
+	</select>
+	
+</div>
+</body>
+</html>
